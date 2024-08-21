@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Regione Lazio | IPEM 270</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="bandera.png">
+</head>
+
+<body>
+
+
+  <br>
+  <div class="contenedor">
+    <div class="encabezado">
+      <div class="categoria" id="categoria">
+      </div>
+      <div class="puntaje" id="puntaje"></div>
+      <div class="numero" id="numero"></div>
+      <div class="pregunta" id="pregunta">
+      </div>
+      <img src="#" class="imagen" id="imagen">
+    </div>
+    <div class="btn" id="btn1" onclick="oprimir_btn(0)"></div>
+    <div class="btn" id="btn2" onclick="oprimir_btn(1)"></div>
+    <div class="btn" id="btn3" onclick="oprimir_btn(2)"></div>
+    <div class="btn" id="btn4" onclick="oprimir_btn(3)"></div>
+
+    <script src="script.js"></script>
+  </div>
+
+  <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.13.0/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.13.0/firebase-analytics.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+  
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+      apiKey: "AIzaSyA5yI-n23ww6rpoOve7SnMfhH8-D_n1TwY",
+      authDomain: "regiones-italianas.firebaseapp.com",
+      projectId: "regiones-italianas",
+      storageBucket: "regiones-italianas.appspot.com",
+      messagingSenderId: "531957004075",
+      appId: "1:531957004075:web:6ed0b77a14d9cbef80b76e",
+      measurementId: "G-5KZHYHTQW7"
+    };
+  
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+  </script>
+
+</body>
+
+</html>
